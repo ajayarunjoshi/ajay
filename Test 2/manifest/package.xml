@@ -32,5 +32,14 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+        <members>Account</members>
+    </types>
+    <types>
+        <members>*</members>
+        <name>*</name>
+    </types>
     <version>59.0</version>
 </Package>
