@@ -1,0 +1,118 @@
+/* CSS with animations */
+
+:host {
+    display: block;
+}
+
+.custom-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.slds-card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: none;
+}
+
+.slds-einstein-header {
+    padding: 0.5rem 1rem;
+    background-color: #f3f4f6;
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.slds-media_center {
+    align-items: center;
+}
+
+.slds-icon_container {
+    width: 2rem;
+    height: 2rem;
+    fill: #1e70bf;
+}
+
+.slds-media__body {
+    margin-left: 1rem;
+}
+
+.slds-text-heading_small {
+    font-size: 1.25rem;
+    color: #1e70bf;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.contact-status {
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    background-color: #a1efce;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.job-info {
+    margin-bottom: 10px;
+}
+
+.previous-job, .now-job {
+    display: inline-block;
+    background-color: #f7aed2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #333;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out; /* Added animation */
+}
+
+.now-job {
+    background-color: #b3c6f8;
+}
+
+.slds-text-align_right {
+    text-align: right;
+}
+
+.slds-button_brand {
+    background-color: #1e70bf;
+    border-color: #1e70bf;
+    color: #ffffff;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slds-button_brand:hover {
+    background-color: #00509d;
+    border-color: #00509d;
+    transform: scale(1.05);
+}
+
+/* Add transition effects for smoother animations */
+.custom-card,
+.slds-einstein-header {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add hover effect for the card */
+:host(:hover) .custom-card {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Add hover effect for the button */
+:host(:hover) .slds-button_brand {
+    transform: scale(1.05);
+}
+
+/* Add some subtle animations to the job info */
+.job-info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

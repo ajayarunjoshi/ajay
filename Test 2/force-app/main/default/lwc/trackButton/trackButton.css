@@ -1,0 +1,10 @@
+.spins::after {
+    position: absolute;
+    content: 'Sending Request to Kanlet';
+    width: 100%;
+    text-align: center;
+    top: calc(50% + 3em);
+    font-weight: bold;
+	font-size: 20px;
+	margin-top: -125px;
+}
